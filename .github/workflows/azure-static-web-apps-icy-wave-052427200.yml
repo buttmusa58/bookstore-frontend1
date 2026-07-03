@@ -16,6 +16,8 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
+        env:
+          VITE_API_URL: https://book-store-backend1-eqajbhbbcrc6fje8.eastasia-01.azurewebsites.net/api
         with:
           submodules: true
           lfs: false
